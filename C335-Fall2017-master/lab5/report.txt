@@ -1,0 +1,28 @@
+//Dhruv Agnihotri
+//Lab 5 - report
+//9-24-2017
+
+What does the CS pin do (the CS pin is called SS in the lab manual)?
+The CS pin selects one of the integrated circuts connected to a central bus.
+
+Why do you set the CS high at the end of the pin initializations? What 
+other functions in f3d_gyro.c change CS from low to high or high to low?
+You set the CS high to turn off the communication between the gyro and the microprocessor. Other functions that change are GPIO_SetBITS(GPIOE, GPIO_Pin_3), as well as the macro 
+GYRO_CS_LOW
+ 
+How do you hook up multiple peripherals on one SPI bus?
+Set the divice you are trying to communicate with to low and the one you arent trying to communicate with to high
+
+The STM has an Operating Frequency of 72 MHz. When initializing SPI1, 
+what do you set the baud rate prescaler to? What is the resulting SPI 
+clock frequency?
+You would set the prescaler to 8. The result would be a clock frequency of 9 MHz.
+
+Does a peripheral (slave) need to be configured with the transmission 
+speed before it can communicate with the microcontroler (master)? Why 
+would you want to be able to do on-the-fly changes in transmission speed?
+Yes, or else you would read null pointers. You would want this feature if the bus has 2 different speeds.
+
+Describe what you learned and any difficulties you had [5]:
+I leanred how to initialize the gyro and how to make it communicate with serialT and the led pins. The difficulties I had were centered around the last part of taking the user input 
+from the console at the same time as running the gyro. We got the user button to cycle through our test array but were having difficulty getting input from the console.

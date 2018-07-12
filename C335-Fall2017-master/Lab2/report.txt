@@ -1,0 +1,10 @@
+1. Dhruv Agnihotri
+dagnihot
+Joe Hodson
+jthodson
+
+2. Results: We accomplished learning about memory and basic functions of GDB. The versions of dump and poly work successfully.
+
+3. We had a little trouble with debugging the modifications made to the memory_dump function but once we used the GDB tutorials listed on the resources page of the class website, it started to come together as expected.
+
+4. I learned in the difference bewteen expressions in C and what they mean. For example, rawdata[4] references the contents of the fifth element while rawdata by itself references the address of the first element

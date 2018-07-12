@@ -1,0 +1,35 @@
+//Dhruv Agnihotri
+//Lab 8 - report
+
+Q1) In previous labs, adding a peripheral has required pin initializations. Why were able to add 
+the nunchuk without initializing anything?
+
+We were able to add the nunchuck because it is an I2C.
+
+
+Q2) What are the major differences between these two functions and what does that imply about 
+communicating with the nunchuk?
+
+The I2C_TransferHandling is set to AutoEnd_Mode instead of SoftEnd_Mode. This implies that the nunchuck automatically accepts the data.
+
+Q3) What do all of these variables correspond to in the nunchuk?
+
+  unsigned char jx; joystick up/down
+  unsigned char jy; joystick left/right
+  unsigned short ax; movement in x direction
+  unsigned short ay; movement in y direction
+  unsigned short az; movement in z direction
+  unsigned char c; c button
+  unsigned char z; z button
+
+Q4) Explain the code.
+
+Raw data from the nunchuck is read. At the first 2 bites, the left most bit corresponds to the z button and the right most corresponds to c button.
+
+Difficulties: 
+
+I had a difficult time getting the bar graph for the nunchuck accelerometer to expand.
+
+What Did I Learn?: 
+
+I learned what data the nunchuck reads and how it can determine which way the joystick is being moved using two variables.

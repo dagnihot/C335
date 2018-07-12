@@ -1,0 +1,42 @@
+Dhruv Agnihotri
+Lab 9 - Report
+11/3/2017
+
+Q1.) What are we doing here and how does it relate to what we know about SPI?
+
+SD_CS_HIGH() – data is transferred through the pins
+SD_CS_LOW() – communication of data between the processor and SD card is stopped. 
+This synchronous communication acts similarly to SPI.
+
+
+Q2.) Explain how you might use the *f3d_delay_uS()* function within the *delay()* function to replace the delay loop below. What would you expect to be the advantage of using a timer 
+over a delay loop?
+
+The *f3d_delay_uS()* function can be used within the *delay()* function to produce a more finite delay time.
+An advantage to using a timer over a delay loop would be that a timer would allow for more accuracy within the functionality of the code.
+
+
+
+Q3.) Read chapter 12 in the lab manual which covers DMA (direct memory access). Why might DMA be important in improving the performance of your image display application?
+
+DMA allows for an increase in pixels drawn on the LCD. 
+With DMA – 735k pixels/second are processed. 
+Without DMA – 50k pixels/second are processed.
+
+
+Q4.) Research the FAT file system and describe the function of the file allocation table. Explain
+how the corruption of an entry in the table can cause part of a file to be lost.
+
+The FAT file system locates files in the disk. If two files are of the same name, the file can become corrupt and lost.
+
+
+
+Q5.) What is the difference between FAT16 and FAT32?
+
+The difference between FAT16 and FAT32 is that FAT16 sets a limit on the entries allowed in the root folder, whereas FAT32 does not.
+
+
+Difficulties: The most difficult portion of this lab was getting the pictures to display on the LCD. Some things that contributed to our problems were that our rgb values 
+in one the files was flipped to be gbr. Also, one of the pins wasn't properly configured in the driver.
+
+What I learned: I learned that the SD Card uses SPI functionality. I also learned how the LCD screen display works with the accelerometer values.

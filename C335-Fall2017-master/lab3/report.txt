@@ -1,0 +1,11 @@
+//Dhruv Agnihotri
+//Partner - Hasan Y Ahmed
+//Lab 3 - Report
+
+1. Speed = 24MHz, Flash = 128k bytes, 8k bytes RAM
+2. General Purpose Input Output
+4. Pins 15, 11 Port E
+5. GPIO_PIN, GPIO_Mode, GPIO_Speed, GPIO_OType, GPIO_PuPd
+
+We encountered a few minor difficulties in getting the button to turn on all of the pins. We 
+overcame this by making sure to add all of the pins to the led_on and led_off functions.

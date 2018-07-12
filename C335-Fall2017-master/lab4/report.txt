@@ -1,0 +1,23 @@
+Dhruv Agnihotri
+Partner: Joe Hodson
+Lab 4
+9.15.2017
+
+1. How many connections are required to communicate over UART?
+   2; host->target and target->host.
+
+2. What is the purpose of "alternate functions" for GPIO pins?
+   To allow a pin to be linked to a module which prevents use with other peripherals.
+
+3. Define "baud rate" in your own words.
+   The transmitter and the receiver maintaining separate clocks.
+
+
+4. Why do we need newlib_stubs?
+   It is essential for the reading and writing of characters.
+
+5. Situation in which Salae Logic Analyzer is the best debugging method
+   Since the SLA shows the binary characters (1 or 0), it can tell us what the input is and whether or not it is the right input or not.
+
+6. What did you learn?
+   I learned how to send data from the command line down to the discovery board. It was actually really cool seeing the data being passed through the hardware. When we disconnected one of the wires from the board while running the program, the output of the program stopped immediately and when we put it back in it started to continue instantanously.

@@ -1,0 +1,35 @@
+Dhruv Agnihotri
+Lab 6 - Report
+9/29/2017
+
+1) Discuss the advantages and disadvantages of printf debugging?
+
+Printf debugging is a good way to catch common problems. However, it is limited in versatility of understanding specific code and hardware issues which can be a serious disadvantage.
+
+
+2) Explain why the spiReadWrite function is called inside a higher level peripheral function (the lcdWrite function).
+
+It sets up communication between the processor and the LCD.
+
+3) Why does LCD_CS_DEASSERT() do? Why is it important?
+
+LCD_CS_DEASSERT() sets the LCD CS to high. This is important it tells us that the master is not communicating with the LCD peripheral.
+
+
+4) Explain how the character data from the ASCII array in glcdfont.c gets converted to pixels.
+
+The data goes through a nested for-loop and iterates through each column of the character and finds the column of pixels for the ith character. After that it iterates through and determines whether or not a pixel should be drawn at that a specific vertical point in that column.
+
+
+5) Give the exact timing difference between the two versions of f3d_lcd_fillScreen, from the Salae analyzer, and explain why the new function is faster.
+
+Run time of initial version: 209 ms. 
+Run time of second version: 72 ms.
+Difference: 209 - 72 = 137 ms. 
+
+The new function communicates with the LCD less often, but gives more information per communication session. Thus it is faster and more efficient.
+
+
+Difficulties: 
+
+We had a few difficulties in making the LCD screen turn red but it was due to a syntax issue that we fixed early in the lab. We also had to use a little bit of finesse in making the bar graph spacing so that all of the bars would show and the space in between them was about the same.

@@ -1,0 +1,41 @@
+//Dhruv Agnihotri
+//Lab 7 - report
+
+1. How many pins does it have? 14
+
+
+    Vdd_IO
+    SCL
+    SDA
+    INT2
+    INT1
+    C1
+    GND
+    Reserved
+    DRDY
+    Reserved
+    Reserved
+    SETP
+    SETC
+    Vdd
+
+How many volts? 2.5
+Where is it located at? It is located between the user button and the reset button
+
+
+2. Why do we write to the accelerometer/magnetometer before we can read from them?
+To specify the return location and how it functions.
+
+   What are the following lines of code doing?
+Each line is sending and storing data to the accelerometer/magnetometer
+
+3. What do the following lines of code do? (it is only necessary to explain the accelerometer)
+
+It captures the data from the accelerometer. Raw data is taken and converted into a float which is 
+then stored in an array. A left shift of 8 is used to multiply the original number. The final 
+answer is stored as a 16 bit int.
+
+4. Why might it be necessary to tilt compensate your compass computation?
+
+It may be nessesary to compensate the compass computation because the board position can determine 
+if the reading is accurate or not.

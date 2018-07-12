@@ -1,0 +1,11 @@
+Dhruv Agnihotri
+Lab 10 - report
+
+Difficulties:
+I had some difficulties with the LED Slow Motion in getting the LEDs to 
+cycle when the button was pressed at the 10Hz rate and then going back to 
+100 when released.
+
+What did I learn?:
+I learned that the Systick provides a periodic interrupt based a frequency 
+that is passed in when the device is configured

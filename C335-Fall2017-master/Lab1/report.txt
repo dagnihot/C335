@@ -1,0 +1,9 @@
+Dhruv Agnihotri
+username: dagnihot
+
+Results: I made two versions of the Hello World program. I got the second one to print a countdown timer
+
+Difficulties: I had trouble initially making the counter decrement, but I made a change to pass a different variable and it worked.
+
+Stuff i learned: I learned the basics of commands in Unix and how to write and compile programs in C with emacs.
+
